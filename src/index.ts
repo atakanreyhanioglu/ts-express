@@ -6,7 +6,9 @@ import cookieSession from "cookie-session";
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cookieSession({ keys: ['asdasd'] }))
+app.use(cookieSession({ keys: ['cookieKey'] }))
 app.use(router)
 
 app.listen(3000, () => console.log('listening on 3000'))
+
+
